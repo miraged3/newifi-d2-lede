@@ -50,12 +50,12 @@ jobs:
           else
             # 没有 .config 就生成一个最小示例（可跑通，但建议你自己提供 .config）
             cat > .config <<'EOF'
-            CONFIG_TARGET_ramips=y
-            CONFIG_TARGET_ramips_mt7621=y
-            CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
-            CONFIG_PACKAGE_luci=y
-            CONFIG_PACKAGE_luci-ssl=y
-            EOF
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt7621=y
+CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-ssl=y
+EOF
           fi
           make defconfig
 
